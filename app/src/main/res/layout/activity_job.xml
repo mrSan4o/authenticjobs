@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/job_ident_bottom">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/job_padding_text"
+                    android:text="Название чего-то" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/job_ident_bottom">
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/job_padding_text"
+                    android:text="Длинное описание чего-то"
+                    android:textSize="12dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/job_ident_bottom">
+
+                <TextView
+                    android:id="@+id/company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/job_padding_text"
+                    android:text="Компания"
+                    android:textSize="12dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/job_padding_text"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="Full-time"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/job_padding_text"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textAlignment="textEnd"
+                android:text="12.12.2012 12:12"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </ScrollView>
+</layout>
