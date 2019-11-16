@@ -9,17 +9,12 @@ import com.san4o.just4fun.authenticjobs.repository.JobsRepository
 import kotlinx.coroutines.launch
 
 class JobsListViewModel(val repository: JobsRepository) : ViewModel() {
-    val _items = MutableLiveData<List<JobItem>>()
-
+    private val _items = MutableLiveData<List<JobItem>>()
     val items: LiveData<List<JobItem>> = _items
 
-
-
     init {
-
         viewModelScope.launch {
             _items.value = repository.findJobs().sortedByDescending { it.postDate }
         }
     }
-
 }
