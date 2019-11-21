@@ -10,9 +10,9 @@
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -71,11 +71,11 @@
                 android:id="@+id/date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingEnd="@dimen/job_padding_text"
                 android:paddingTop="4dp"
+                android:paddingEnd="@dimen/job_padding_text"
                 android:paddingBottom="4dp"
-                android:textAlignment="textEnd"
                 android:text="12.12.2012 12:12"
+                android:textAlignment="textEnd"
                 android:textStyle="italic" />
         </LinearLayout>
     </ScrollView>

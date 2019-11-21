@@ -10,7 +10,16 @@
         android:layout_height="match_parent"
         android:clipToPadding="false"
 
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-         />
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <com.san4o.just4fun.authenticjobs.ui.view.CustomLoaderView
+        android:id="@+id/loader"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -33,6 +33,10 @@ class JobsListActivity : AppCompatActivity(), NavigateOnItemListener {
         viewModel.items.observe(this, Observer {
             jobsListAdapter.refreshItems(it ?: emptyList())
         })
+        viewModel.loader.observe(this, Observer {
+            loader.setVisible(it)
+            list.setVisible(!it)
+        })
     }
 
 
@@ -99,6 +103,3 @@ class JobsListViewHolder(
     }
 }
 
-fun Date.toDateTimeString(): String {
-    return SimpleDateFormat("dd.MM.yyyy HH:mm").format(this)
-}
