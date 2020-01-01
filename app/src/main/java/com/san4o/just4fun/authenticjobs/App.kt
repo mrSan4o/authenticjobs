@@ -17,5 +17,7 @@ class App : Application() {
             androidContext(this@App)
             modules(listOf(appModule))
         }
+
+        Timber.d("App start")
     }
 }
