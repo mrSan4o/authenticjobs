@@ -1,4 +1,4 @@
-package com.san4o.just4fun.authenticjobs.ui
+package com.san4o.just4fun.authenticjobs.ui.details
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -14,7 +14,7 @@ class JobViewModel(
 
     val data = MutableLiveData<Job>()
 
-    init {
+    fun load() {
         viewModelScope.launch {
             val job = repository.getJob(id)
             data.postValue(job)

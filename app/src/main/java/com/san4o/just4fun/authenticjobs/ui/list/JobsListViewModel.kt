@@ -1,4 +1,4 @@
-package com.san4o.just4fun.authenticjobs.ui
+package com.san4o.just4fun.authenticjobs.ui.list
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -16,9 +16,7 @@ class JobsListViewModel(val repository: JobsRepository) : ViewModel() {
     private val _loader = MutableLiveData<Boolean>()
     val loader: LiveData<Boolean> = _loader
 
-
-
-    init {
+    fun load() {
         _loader.value = true
         viewModelScope.launch {
             delay(3000)
